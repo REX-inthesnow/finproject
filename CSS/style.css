@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
+
+header {
+  height: 200vh;
+}
+
+.container {
+  /* hide fixed overflow contents */
+  clip: rect(0, auto, auto, 0);
+
+  /* does not work if overflow = visible */
+  overflow: hidden;
+
+  /* only works with absolute positioning */
+  position: absolute;
+
+  /* Make sure containers are full-width and height */
+  height: 100vh;
+  left: 0;
+  width: 100%;
+  
+  
+  }
+
+.container_solid {
+  background: rgb(254, 244, 244);
+  
+  /* position this container at the top of its parent element */
+  top: 0;
+}
+
+.title_wrapper {
+  position: fixed;
+  display: block;  
+  margin: auto;
+  width: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.title_wrapper h1 {
+  text-align: center;
+  font-size: 64px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+}
+
+.container_solid .title_wrapper h1 {
+  /* the text background */
+  background: url(https://freerangestock.com/sample/86755/black-and-green-background-with-lines.jpg);
+  background-size: 100vw auto;
+  background-position: center;
+  
+  /* clip the text is possible */
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  /* fallback text color */
+  color: rgb(22, 21, 21);
+}
+
+.container_image {
+  /* Grab a free image from unsplash */
+  background-image: url(https://live.staticflickr.com/8473/8136629475_f6f0b408b3_z.jpg);
+  background-size:100vw auto;
+  background-position: center;
+  background-attachment: fixed;
+  
+  /* position the second container below the first container */
+  top: 100vh;
+}
+
+.container_image .title_wrapper h1 {
+  color: rgb(255, 247, 247);
+}
+
+h1{
+  background-color: black;
+}
+
+section {
+  min-height: 100vh;
+  padding: 2em;
+  margin: auto;
+  max-width: 800px;
+}
+
+section h2 {
+  font-family: 'Fraunces', serif;
+}
+
+section p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+body {
+  font-size: 100%;
+  font-family: 'Lora', serif;
+  background: #faf6f6;
+}
+
+
+footer {
+  padding-top: 1.3em;
+  text-align: center;
+  font-family: 'Lora', serif;
+  color: rgb(18, 18, 18);
+  font-weight: bold;
+}
+
+cite {
+  font-style: normal;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #000;
+}
+
+body {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 40px;
+  background: #fff;
+  font-family: Baskerville, Georgia, serif;
+}
+
+.mb-style-2 {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.mb-style-2 p {
+  margin: 0;
+}
+
+.mb-style-2 blockquote {
+  padding: 0;
+  margin: 0;
+}
+
+.mb-style-2 blockquote p {
+	font-size: 28px;
+	font-style: italic;
+	background: #efefef;
+	display: inline;
+	color: #000;
+	text-shadow: 0 1px 1px #acaeac80;
+	line-height: 46px;
+	box-shadow: 0 8px 0 #ccc;
+}
+
+.mb-style-2 .mb-attribution {
+	text-align: right;
+}
+
+.mb-style-2 .mb-author{
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+  letter-spacing: 1px;
+	color: #000;
+}
+
+.mb-style-2 cite a{
+	color: #1a1717;
+	font-style: italic;
+}
+
+.mb-style-2 cite a:hover{
+	color: #7e7e7e;
+}
